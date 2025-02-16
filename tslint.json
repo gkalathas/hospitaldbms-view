@@ -13,7 +13,7 @@
     "object-literal-shorthand": false,
     "radix": false,
     "prefer-for-of": false,
-    
+
     "align": {
       "options": [
         "parameters",

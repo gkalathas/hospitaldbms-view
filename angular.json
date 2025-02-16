@@ -17,7 +17,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
-                        "outputPath": "dist/freya-ng",
+                        "outputPath": "dist/hospitaldbms-view",
                         "index": "src/index.html",
                         "main": "src/main.ts",
                         "polyfills": [
@@ -30,6 +30,14 @@
                             "src/assets"
                         ],
                         "styles": [
+                            "node_modules/primeng/resources/primeng.min.css",
+                            "node_modules/primeflex/primeflex.css",
+                            "node_modules/primeicons/primeicons.css",
+                            "node_modules/prismjs/themes/prism-coy.css",
+                            "node_modules/font-awesome/css/font-awesome.min.css",
+                            "node_modules/owp.glyphicons/glyphicons.css",
+                            "node_modules/quill/dist/quill.core.css",
+                            "node_modules/quill/dist/quill.snow.css",
                             "src/styles.scss"
                         ],
                         "scripts": []
@@ -97,6 +105,18 @@
                             "src/styles.scss"
                         ],
                         "scripts": []
+                    }
+                },
+                "lint": {
+                    "builder": "@angular-devkit/build-angular:tslint",
+                    "options": {
+                        "tsConfig": [
+                            "tsconfig.app.json",
+                            "tsconfig.spec.json"
+                        ],
+                        "exclude": [
+                            "**/node_modules/**"
+                        ]
                     }
                 }
             }
